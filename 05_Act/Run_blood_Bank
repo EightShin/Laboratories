@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class run_blood_bank {
+    public static void main(String[] args) {
+        Scanner inp = new Scanner(System.in);
+
+        run_blood_bank bd = new run_blood_bank(); // create object
+
+        System.out.println("Enter blood type of patient: ");
+        String input1 = inp.nextLine();
+        System.out.println("Enter the Rhesus factor (+ or -): ");
+        String input2 = inp.nextLine();
+
+        // if inputs are not empty, set them
+        if (!input1.isEmpty()) {
+            bd.setBloodType(input1);
+        }
+        if (!input2.isEmpty()) {
+            bd.setRhFactor(input2);
+        }
+
+        // display using getters
+        System.out.println(bd.getBloodType() + bd.getRhFactor() + " is added to the blood bank.");
+
+        inp.close();
+    }
+}
