@@ -8,14 +8,14 @@ public class run_blood_data {
         System.out.println("Enter the Rhesus Factor (+ or -)");
          String input2 = inp.nextLine();
 
-         if(input1 == "" && input2 == "") {
+         if(input1.isEmpty() && input2.isEmpty()) {
 
             blood_data sp = new blood_data();
             sp.display();
 
          }
          else {
-            
+
             blood_data rp = new blood_data(input1, input2);
             rp.display();
          }

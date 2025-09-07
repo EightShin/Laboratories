@@ -19,5 +19,3 @@ class blood_data {
 
 
     }
-
-
